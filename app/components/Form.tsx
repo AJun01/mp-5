@@ -1,5 +1,5 @@
 'use client'
-import {useState} from 'react';
+import {useState, type FormEvent } from 'react';
 
 
 
@@ -9,7 +9,7 @@ export default function Form() {
     const [short, setShort] = useState('');
 
     //onsubmit
-    async function onSubmit(e){
+    async function onSubmit(e: FormEvent<HTMLFormElement>){
         e.preventDefault();
         const res = await fetch('/api/alias', {
             method: 'POST',
