@@ -31,7 +31,7 @@ export default function Form() {
           placeholder="long url" value={url}
           onChange={e=>setUrl(e.target.value)}/>
         <br></br>
-        <h1>https://mp-5.vercel.app/</h1>
+        <h1>https://mp-5-seven-xi.vercel.app/</h1>
 
         <input
           required
